@@ -31,7 +31,7 @@ jobs:
         with:
           php_version: ${{ matrix.php-versions }}
           command: require
-          args: symfony/symfony:${{ matrix.symfony-versions }} -W
+          args: symfony/http-foundation:${{ matrix.symfony-versions }} -W
 
       - name: PHPUnit (script)
         run: ./vendor/bin/phpunit
